@@ -1,0 +1,209 @@
+#header{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	top: 30px;
+	color:black !important;
+	transition: all .6s;
+}
+.fixed-top {
+    position: fixed !important;
+    top: 0 !important;
+	background: rgba(64, 64, 64, .95);
+	transition: all .6s;
+}
+#preloader{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 80px;
+}
+.nav-item > a{
+	color: white;
+}
+
+
+
+
+#preloader > span:nth-child(1){
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	background: #fa6a2e;
+	animation: preloader_animation_small 1.6s linear infinite;
+}
+#preloader > span:nth-child(2){
+	position: absolute;
+    left: -10px;
+    top: -10px;
+	height: 80px;
+	width: 80px;
+	border-radius: 100%;
+	background: #fa6a2e;
+	animation: preloader_animation_big 1.8s linear infinite; 
+}
+
+
+section.one{
+	position: relative;
+	padding-top: 130px;
+	background: url('http://www.themenesia.com/themeforest/linea-new/images/background/5.jpg') top;
+	background-size: cover;
+	transition: all .4s;
+}
+
+section.one h4{
+	font-size: 12px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#fa6a2e;
+}
+section.one h3{
+	font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+    color:white;
+}
+.sec_one_text{
+    padding: 100px 0;
+}
+.button_a{
+	background: #fa6a2e;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px 30px 15px 30px;
+    min-width: 120px;
+    outline: 0;
+}
+.button_a:hover{
+	text-decoration: none;
+	opacity: .8;
+    box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, 0.3);
+	background: #fa6a2e;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px 30px 15px 30px;
+    min-width: 120px;
+    outline: 0;
+}
+
+
+@keyframes preloader_animation_small {
+	from {
+		transform: scale(0.1);
+		opacity: 0.8;
+	}
+	to{
+		transform: scale(0.7);
+		opacity: 0.1;
+	}
+}
+@keyframes preloader_animation_big {
+	from {
+		transform: scale(0.2);
+		opacity: 0.3;
+	}
+	to{
+		transform: scale(1.1);
+		opacity: 0.1;
+	}
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/*SEKCJA DRUGA*/
+
+
+
+.two{
+	padding: 80px;
+}
+
+.two_text_left{
+	font-family: "Dosis";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: #404040;
+    border: none;
+}
+
+.name{
+	font-family: "Dosis";
+    display: block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 20px;
+    color: #fa6a2e;
+}
+
+.fa-color{
+	color: #fa6a2e;;
+}
+
+.margin_zero{ /*tekst nie wychodzi poza okno*/
+	margin:0 !important;
+}
+
+.block_image{
+	position: relative;
+	height: 100%;
+	width: 100%;/*
+	center sprawia, że zdjęcie jest ciągle
+	w tym samym miejscu*/
+	background: url("http://www.themenesia.com/themeforest/linea-new/images/misc/1.jpg") center;
+	background-size: cover;
+	overflow: hidden;
+
+}
+
+.block_image_overlay{
+	padding: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+/*		top: 80%;*/
+	top: calc(100% - 50px);
+	background: rgba(134, 136, 140, 0.6); /*przezroczystość 0.6*/
+	transition: all .4s;
+}
+
+.block_image:hover > .block_image_overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	transition: all .4s;
+}
+
+@media (max-width:768px){
+	.padding_zero{
+	padding:0 !important;
+}
+	.block_image{ /*zdjęcia wchodzą przez to pod tekst*/
+		min-height: 300px;
+	}
+}
+
+
+
+
+
+
+
+
+

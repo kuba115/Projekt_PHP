@@ -1,0 +1,979 @@
+#header{
+	z-index: 1001;
+	position: absolute;
+	width: 100%;
+	top: 30px;
+	color:black !important;
+	transition: all .6s;
+}
+.fixed-top {
+    position: fixed !important;
+    top: 0 !important;
+	background: rgba(64, 64, 64, .95);
+	transition: all .6s;
+}
+#preloader{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 80px;
+}
+.nav-item > a{
+	color: white;
+}
+
+
+
+
+#preloader > span:nth-child(1){
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	background: #fa6a2e;
+	animation: preloader_animation_small 1.6s linear infinite;
+}
+#preloader > span:nth-child(2){
+	position: absolute;
+    left: -10px;
+    top: -10px;
+	height: 80px;
+	width: 80px;
+	border-radius: 100%;
+	background: #fa6a2e;
+	animation: preloader_animation_big 1.8s linear infinite; 
+}
+
+
+section.one{
+	position: relative;
+	padding-top: 130px;
+	background: url('http://www.themenesia.com/themeforest/linea-new/images/background/5.jpg') top;
+	background-size: cover;
+	transition: all .4s;
+}
+
+section.one h4{
+	font-size: 12px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#fa6a2e;
+}
+section.one h3{
+	font-family: "Dosis";
+	font-weight: bold;
+	font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+    color:white;
+}
+
+section.one p{
+	font-family: "Dosis";
+	font-weight: bold;
+	font-size: 14px;
+    color:white;
+}
+
+.sec_one_text{
+    padding: 100px 0;
+}
+.button_a{
+	background: #fa6a2e;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px 30px 15px 30px;
+    min-width: 120px;
+    outline: 0;
+}
+.button_a:hover{
+	text-decoration: none;
+	opacity: .8;
+    box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, 0.3);
+	background: #fa6a2e;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px 30px 15px 30px;
+    min-width: 120px;
+    outline: 0;
+}
+
+
+@keyframes preloader_animation_small {
+	from {
+		transform: scale(0.1);
+		opacity: 0.8;
+	}
+	to{
+		transform: scale(0.7);
+		opacity: 0.1;
+	}
+}
+@keyframes preloader_animation_big {
+	from {
+		transform: scale(0.2);
+		opacity: 0.3;
+	}
+	to{
+		transform: scale(1.1);
+		opacity: 0.1;
+	}
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/*.............Sekcja druga...............
+.............Sekcja druga...............*/
+
+
+.padding_row{
+	padding-top: 20px;
+}
+
+.two{
+	padding: 80px;
+}
+
+.two_text_left{
+	font-family: "Dosis";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: #404040;
+    border: none;
+}
+
+.name{
+	font-family: "Dosis";
+    display: block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 20px;
+    color: #fa6a2e;
+}
+
+.fa-color{
+	color: #fa6a2e;;
+}
+
+.margin_zero{ /*tekst nie wychodzi poza okno*/
+	margin:0 !important;
+}
+
+.block_image{
+	position: relative;
+	height: 100%;
+	width: 100%;/*
+	center sprawia, że zdjęcie jest ciągle
+	w tym samym miejscu*/
+	background: url("http://www.themenesia.com/themeforest/linea-new/images/misc/1.jpg") center;
+	background-size: cover;
+	overflow: hidden;
+
+}
+
+.block_image_overlay{
+	padding: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+/*		top: 80%;*/
+	top: calc(100% - 50px);
+	background: rgba(134, 136, 140, 0.6); /*przezroczystość 0.6*/
+	transition: all .4s;
+}
+
+.block_image:hover > .block_image_overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	transition: all .4s;
+}
+
+@media (max-width:768px){
+	.padding_zero{
+	padding:0 !important;
+}
+	.block_image{ /*zdjęcia wchodzą przez to pod tekst*/
+		min-height: 300px;
+	}
+}
+
+.text_style > h3{
+	font-family: "Dosis";
+    font-size: 20px;
+	color: white;
+}
+
+/*............sekcja trzecia.............
+............sekcja trzecia.............*/
+
+
+/*żeby wyeliminować blur robimy tak jak poniżej, 
+a sekcję image dopisujemy w nowym divie*/
+/*section.three{
+	overflow: hidden;
+}
+
+section.three > .image{
+	background-image: url(http://www.themenesia.com/themeforest/linea-new/images/background/4.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:600px;
+
+	filter: blur(3px);
+}*/
+
+section.three{
+	min-height: 600px;
+	position: relative;
+}
+
+section.three > .container{
+		padding: 80px 0;
+}
+
+.sec_element_parallax{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+
+	background-image: url(http://www.themenesia.com/themeforest/linea-new/images/background/4.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+/*	height:600px;*/
+
+/*żeby użyć kilka na raz, muszą być w jednej linii*/
+	/*filter: blur(3px);*/
+	/*filter: brightness(20%);*/
+	/*filter: contrast(50%);*/
+	/*filter: opacity(30%);*/
+	/*filter: grayscale(30%);*/
+	/*filter: sepia(70%);*/
+	/*filter: drop-shadow(26px 26px 26px green);*/
+
+	/*filter: hue-rotate(360deg);*/
+	filter: invert(20%) brightness(75%)
+			grayscale(50%);
+}
+
+.sec_three_hed > h4{
+	font-size: 12px;
+	letter-spacing: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #fa6a2e;
+	text-align: center;
+}
+
+.sec_three_hed > h3{
+	padding:15px;
+/*	text-align: left;*/
+	font-family: "Dosis";
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.sec_three_col_text > h3{
+/*	padding:15px;*/
+/*	text-align: left;*/
+	font-family: "Dosis";
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	text-align: left;
+}
+
+.sec_three_col_text > p{
+	color:#cecece;
+	font-size: 14px;
+}
+
+.recent > h4{
+	padding-top: 40px;
+	font-size: 12px;
+	letter-spacing: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #fa6a2e;
+	text-align: center;
+}
+
+.portfolio > h2{
+	padding-bottom: 20px;
+	font-size: 40px;
+	font-family: "Dosis";
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+}
+
+/*--------------PORTFOLIO---------------------*/
+
+
+
+/*-----------------CODEPEN----------------------*/
+/*--------do sekcji pod WHAT WE DO-------------*/
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  /*background: green;*/
+  color: black;
+  border: none;
+  border-radius: 7px;
+  background-ismage: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  font-family: "Dosis";
+  font-size: 14px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: black;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #fa6a2e;
+  color:white !important;
+  border-radius: 10px !important;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+ul.button-group{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* ---- isotope ---- */
+
+.grid {
+  /*border: 1px solid #333;*/
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 32%;
+  height: 200px;
+  margin: 5px;
+  /*padding: 10px;*/
+  background: #888;
+  color: #262524;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+
+
+.isotope_item_overlay{
+	background: rgba(64, 64, 64, 0.8);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: all .4s;
+}
+
+.isotope_item_background:hover > .isotope_item_overlay{
+	background: rgba(64, 64, 64, 0.8);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	transition: all .4s;
+}
+
+.isotope_item_background > img{
+	max-height: 300px;
+}
+
+.isotope_item_overlay > h3{
+	color: white;
+	font-family: "Dosis";
+	font-size: 18px;
+	text-align: center;
+	line-height: 200px;
+	font-weight: bold;
+}
+
+.isotope_item_overlay{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section.four{
+	padding-bottom: 100px;
+}
+
+
+/*---------------sekcja piąta-----------------
+---------------sekcja tabs--------------------*/
+
+section#tabs{
+	min-height: 600px;
+	position: relative;
+}
+
+section#tabs > .container{
+		padding: 80px 0;
+}
+
+.tabs_element_parallax{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+
+	background-image: url(http://www.themenesia.com/themeforest/linea-new/images/background/2.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+/*	height:600px;*/
+
+/*żeby użyć kilka na raz, muszą być w jednej linii*/
+	/*filter: blur(3px);*/
+	/*filter: brightness(20%);*/
+	/*filter: contrast(50%);*/
+	/*filter: opacity(30%);*/
+	/*filter: grayscale(30%);*/
+	/*filter: sepia(70%);*/
+	/*filter: drop-shadow(26px 26px 26px green);*/
+
+	/*filter: hue-rotate(360deg);*/
+	filter: invert(20%) brightness(75%)
+			grayscale(50%);
+}
+
+.sec_tabs_hed > h4{
+	font-size: 12px;
+	letter-spacing: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #fa6a2e;
+	text-align: center;
+}
+
+.sec_tabs_hed > h3{
+	padding:15px;
+/*	text-align: left;*/
+	font-family: "Dosis";
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+ul.nav{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.tabs-nav-item > a.tabs-nav-link{
+	background: rgba(255, 255, 255, 0.2); 
+	padding: 30px 40px;
+	margin: 0px 10px;
+	transition: all .4s;
+	/*color: #fa6a2e !important;*/
+}
+
+.tabs-nav-item > a.active{
+	background: #fa6a2e !important;
+	padding: 30px 40px;
+	margin: 0px 10px;
+	transition: all .4s;
+	color: white !important;
+}
+
+.tabs-nav-item > a.tabs-nav-link:hover{
+	color: #fa6a2e;
+}
+
+.tab-content > .show{
+	color: white;
+	font-family: "Dosis";
+	font-size: 15px;
+}
+
+
+
+/*---------------STRZAŁKA-----------------*/
+li.tabs-nav-item::after{
+	content: "";
+	display: block;
+	clip-path: polygon(50% 50%, 33% 0, 67% 0);
+	margin: 0px 5px;
+	/*background: #fa6a2e;*/
+	background: rgba(255, 255, 255, 0.2);
+	height: 0px;
+	transition: all .4s;
+}
+
+li.tabs-nav-item:hover::after{
+	content: "":
+	display: block;
+	clip-path: polygon(50% 50%, 33% 0, 67% 0);
+	margin: 0px 5px;
+	/*background: #fa6a2e;*/
+	background: rgba(255, 255, 255, 0.2);
+	height: 40px;
+	transition: all .4s;
+
+}
+
+li.active_tab::after{
+	content: "":
+	display: block;
+	clip-path: polygon(50% 50%, 33% 0, 67% 0);
+	margin: 0px 5px;
+	/*background: #fa6a2e;*/
+	background: #fa6a2e !important;
+	height: 40px;
+	transition: all .4s;
+
+}
+
+
+/*-------------------SEKCJA SZÓSTA------------------*/
+/*--------------------OWL QUOTE--------------------*/
+
+section#owl_quote{
+	padding-top: 70px;
+	padding-bottom: 150px;
+	height: 600px;
+	margin-bottom: 100px;
+}
+
+.img_in_owl_quote{
+	width: 60px !important;
+	margin: 0 auto;
+}
+
+section#owl_quote >
+.owl-carousel > /*bo zamiast classy jest id, dlatego #*/
+.owl-stage-outer >
+.owl-stage >
+.owl-item >
+.owl_quote > img{
+	padding: 20px 0;
+}
+
+section#owl_quote >
+.owl-carousel >
+.owl-stage-outer >
+.owl-stage >
+.owl-item{
+	/*margin: 120px 0px;*/
+	background: #404040;
+	padding: 50px 30px;
+	background: whitesmoke;
+	border-radius: 10px;
+}
+
+section#owl_quote >
+.owl-carousel>
+.owl-stage-outer >
+.owl-stage >
+.owl-item >
+.owl_quote > div > p{
+	font-size: 15px;
+	font-family: "Dosis";
+}
+
+section#owl_quote >
+.owl-carousel >
+.owl-stage-outer >
+.owl-stage >
+.center{
+	background: #404040;
+	margin: 21px 40px 20px 0px !important;
+	top: -1px;
+	transform: scale(1.08);
+	transition: all .4s;
+	color:white;
+	border-radius: 10px;
+}
+
+
+/*-----------------SEKCJA SIÓDMA-------------------*/
+/*-------------------------------------------------*/
+
+
+.author_img{
+	min-height: 250px;
+}
+
+.author_overlay{
+	top: 100%;
+	text-align: center;
+	color: white;
+	opacity:0;
+	transition: all .8s;
+}
+
+.block_image:hover > .block_image_overlay.author_overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 1;
+	transition: all .8s;
+}
+
+.author_info{
+	padding: 20px 0px;
+	text-align: center;
+}
+
+.author_info > h3{
+	font-size: 16px;
+	font-family: "dosis";
+	color: white;
+}
+
+.author_info > h4{
+	font-size: 13px;
+	color: #fa6a2e;
+	font-family: "Dosis"
+}
+
+/*--------------Sekcja Ósma---------------*/
+/*----------------------------------------*/
+
+.contact_img{
+	background: url('http://www.themenesia.com/themeforest/linea-new/images/background/bg-side-1.jpg');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.contactus_right{
+	padding: 90px;
+}
+
+.contactus_right > p{
+	margin: 40px 0;
+}
+
+.contactus_right > h2{
+	padding: 20px 0px;
+}
+
+.contactus_right > h4{
+	text-align: left;
+}
+
+.h4_or_spacing{
+	font-size: 13px;
+	letter-spacing: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #fa6a2e;
+	text-align: center;
+}
+
+.button_a{
+	display: block;
+	background: #fa6a2e;
+	color: #fff;
+	border-radius: 3px;
+	margin: 30px 0px;
+	padding: 15px 30px 15px 30px;
+	max-width: 160px;
+	outline: 0;
+	text-align: center;
+}
+
+.button_a:hover{
+	display: block;
+	background: #fa6a2e;
+	color: #fff;
+	border-radius: 3px;
+	margin: 30px 0px;
+	padding: 15px 30px 15px 30px;
+	max-width: 160px;
+	outline: 0;
+	text-align: center;
+	text-decoration: none;
+	opacity: .8;
+	box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.3);
+}
+
+/*--------------Sekcja Ósma---------------*/
+/*--------------COUNTER-------------------*/
+
+section#counter{
+	height: 200px;
+	background: #404040;
+}
+
+.count_to > h3{
+	padding-top: 55px;
+	font-size: 50px;
+	color: white;
+	font-family: "Dosis";
+	text-align: center;
+}
+
+.count_to > p{
+	color: white;
+	font-size: 15px;
+	font-family: "Dosis";
+	text-align: center;
+}
+
+
+/*--------------Sekcja Dziewiąta---------------*/
+/*--------------Owl 2-------------------*/
+
+section#posts{
+	margin-top: 70px;
+	padding-bottom: 70px;
+}
+
+.h3 >.h3_black{
+	color: black;
+	padding-bottom: 50px;
+}
+
+.owl_posts{
+	height: 100%;
+	background: #f5f5f5;
+}
+
+.owl_posts_content{
+	padding: 20px;
+}
+
+.owl_posts_content > h3{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.owl_posts_content > p{
+	font-size: 13px;
+	font-weight: 400;
+	color: #b0b3ba;
+	line-height: 1.9em;
+}
+
+
+/*--------------Sekcja Dziesiąta---------------*/
+/*--------------Footer-------------------*/
+
+footer{
+	background: #222222;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+/*nth - nawiązanie do 1 dziecka*/
+.line_two_colors > hr:nth-child(1){
+	background: #fa6a2e;
+	width: 20%;
+	height: 1px
+}
+
+.line_two_colors > hr:nth-child(2){
+	background: #4e4e4e;
+	width: 80%;
+	height: 1px;
+}
+
+.head_foot > h5{
+	color: white;
+	font-family: "Dosis";
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.col-md-4 > p{
+	color: #c8cccc;
+	font-family: "Dosis";
+	font-size: 14px
+}
+
+.menus_container > ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.menus_container > ul > li > a{
+	color: #7f8688;
+	text-decoration: none;
+	font-family: "dosis";
+	transition: all .4s;
+
+}
+
+.menus_container > ul > li > a:hover{
+	color: #fa6a2e;
+	text-decoration: underline;
+	font-family: "dosis";
+	transition: all .4s;
+
+}
+
+section.copy> p{
+	color: #c8cccc;
+	padding-top: 20px;
+	font-size: 13px;
+	font-family: "dosis";
+	text-align: center;
+	border-top: 1px solid #c8cccc;
+}
+
+
+/*-----------------SUBHEADER--------------------------
+---------------------------------------------------*/
+
+#subheader{
+	background: url("../img/subheader.jpg");
+	background-size: cover;
+	filter: brightness(60%) invert(20%);
+}
+
+.sub_title > h1{
+	padding: 100px 0px;
+	text-align: center;
+	color: white;
+}
+
+#form{
+	padding: 40px 80px;
+
+}
